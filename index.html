@@ -1,0 +1,93 @@
+<html lang="en-US" style="
+		margin: 0;
+		padding: 0;
+		min-height: 100%;
+		display: flex;
+		flex-direction: column;
+">
+<head>
+	<meta charset="utf-8">
+	<style>
+	div{
+		padding: 2px;
+	}
+	div.svelte-ac4rv4 {
+		margin-top:5px;
+		margin-left:50px;
+		margin-right:50px;
+		margin-bottom:10px;
+	}
+
+		li {margin-bottom: 0.5em;}
+	</style>
+	<script
+			type="module"
+			src="https://gradio.s3-us-west-2.amazonaws.com/3.28.2/gradio.js">
+	</script>
+</head>
+
+
+<body style="
+			width: 100%;
+			margin: 0;
+			padding: 0;
+			display: flex;
+			flex-direction: column;
+			flex-grow: 1;
+		">
+		<div class="gradio-container gradio-container-3-24-1 svelte-ac4rv4 app" style="min-height: initial; flex-grow: 1;">
+			<div class="svelte-ac4rv4">
+				<div class="wrap svelte-1lyswbr" style="min-height: 100%;">
+					<div class="contain" style="flex-grow: 1;">
+						<div class="svelte-vt1mxs gap" style="min-width: min(0px, 100%); flex-grow: 1">
+								<h1 style="text-align: center; font-size: 2.4em"> A computational tool to use ATAC-seq to impute epigenome, transcriptome, and high-resolution chromatin contact maps</h1>
+										<div style="text-align: center; padding: 0px; margin: 0px;">
+											<a href="https://github.com/zzh24zzh/EPCOT_gradio" style="margin-right: 20px;font-size: 22px; color:black;" target="_blank">[ Code / Documentation ]</a>
+											<a href="https://www.biorxiv.org/content/10.1101/2022.05.23.493129v2" style="margin-right: 20px;font-size: 22px; color:black;" target="_blank">[ Paper ]</a>
+											<a href="https://github.com/liu-bioinfo-lab/EPCOT/blob/main/gradio.ipynb" style="font-size: 22px; color:black;" target="_blank">[ Google Colab Notebook ]</a></div>
+									</div>
+
+							<div  class="block svelte-mppz8v padded" style="padding: 0px; margin: 0px; border-width: 0px; box-shadow: none; overflow: visible; background: transparent; border-style: solid;">
+								<div class="wrap center svelte-gjihhp hide" style="position: absolute; padding: 0px;"></div>
+								<div class="svelte-1ed2p3z">
+									<div class="prose svelte-1yrv54" data-testid="markdown"><h2 style="font-size: 22px">Instructions:</h2>
+										<ul>
+											<li style="font-size: 20px">Use the first app to process ATAC-seq data by uploading an ATAC-seq BAM file.</li>
+											<li style="font-size: 20px">Execute the model by uploading the processed ATAC-seq file to the “Run Model” interface in the second app.</li>
+											<li style="font-size: 20px">Visualize the prediction results by uploading the predicted files from the “Run Model” interface to the “Visualize Prediction Results” interface.</li>
+										</ul>
+										<p style="font-size: 20px"> We provide detailed instructions to run the apps on Google Colab notebook with free GPUs
+											<a href="https://colab.research.google.com/github/liu-bioinfo-lab/EPCOT/blob/main/gradio.ipynb">
+												<img data-canonical-src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab" src="https://camo.githubusercontent.com/84f0493939e0c4de4e6dbe113251b4bfb5353e57134ffd9fcab6b8714514d4d1/68747470733a2f2f636f6c61622e72657365617263682e676f6f676c652e636f6d2f6173736574732f636f6c61622d62616467652e737667">
+											</a>
+										</p>
+									</div>
+								</div>
+							</div>
+							<div  class="block svelte-mppz8v padded" style="padding: 0px; margin: 0px; border-width: 0px; box-shadow: none; overflow: visible; background: transparent; border-style: solid;">
+								<div class="wrap center svelte-gjihhp hide" style="position: absolute; padding: 0px;"></div>
+								<hr>
+									<div  class="block svelte-mppz8v padded" style="padding: 0px; margin: 0px; border-width: 0px; box-shadow: none; overflow: visible; background: transparent; border-style: solid;">
+											<h1 style="font-size: 1.8em"> App 1: Process ATAC-seq data</h1>
+												<p style="font-size: 20px;"><strong>Notice:</strong> Downsample the BAM file before upload if the size is too large</p>
+												<p style="font-size: 18px;">Hosted on <a href="https://huggingface.co/spaces/drjieliu/epcot_app" style="font-size: 18px;" target="_blank">Hugging Face Space</a> </p
+									</div>
+
+							</div>
+
+							<gradio-app src="https://drjieliu-epcot-app.hf.space"></gradio-app>
+
+							<hr>
+							<div>
+								<h1 style="font-size:1.8em"> App 2: Run models and visualize prediction results</h1>
+
+								<p style="font-size: 18px;">Hosted on <a href="https://huggingface.co/spaces/drjieliu/EPCOT" style="font-size: 18px;" target="_blank">Hugging Face Space</a> </p>
+
+								<gradio-app src="https://drjieliu-epcot.hf.space"></gradio-app>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+</body>
+</html>
